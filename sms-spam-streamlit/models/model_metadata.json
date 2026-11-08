@@ -1,0 +1,39 @@
+{
+  "model": "TF-IDF + balanced Logistic Regression",
+  "random_state": 42,
+  "raw_rows": 5574,
+  "duplicate_rows_removed": 403,
+  "clean_rows": 5171,
+  "training_rows": 4136,
+  "test_rows": 1035,
+  "test_metrics": {
+    "accuracy": 0.9748792270531401,
+    "spam_precision": 0.9069767441860465,
+    "spam_recall": 0.8931297709923665,
+    "spam_f1": 0.9
+  },
+  "confusion_matrix_labels": [
+    "ham",
+    "spam"
+  ],
+  "confusion_matrix": [
+    [
+      892,
+      12
+    ],
+    [
+      14,
+      117
+    ]
+  ],
+  "dataset_url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+  "dataset_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "model_sha256": "2b58ef1400a604c04fc42bc23e47c3948d6e342cf6ff437aeb12f4c42b4ee93d",
+  "versions": {
+    "python": "3.12.14",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "joblib": "1.6.0"
+  }
+}
